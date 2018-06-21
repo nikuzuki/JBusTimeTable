@@ -1,6 +1,7 @@
 class GotobusstopController < ApplicationController
   def index
-    @time = Time.current.in_time_zone('Asia/Tokyo')
+    @time = Time.current
+    #@time = Time.current.in_time_zone('Asia/Tokyo')
     @timedatas = JaistBusTimeTableInWeekday.all
   end
 end

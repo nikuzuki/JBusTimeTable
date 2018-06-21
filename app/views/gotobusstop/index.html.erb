@@ -10,7 +10,7 @@
   <tbody>
     <% @timedatas.each do |timedata| %>
       <tr>
-        <td><%= timedata.starttime %></td>
+        <td><%= timedata.starttime.strftime("%R") %></td>
       </tr>
     <% end %>
   </tbody>
