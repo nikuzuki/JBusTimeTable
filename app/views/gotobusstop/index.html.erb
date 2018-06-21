@@ -7,10 +7,12 @@
     </tr>
   </thead>
 
+  <h2><%= !@next_bus.nil? ? @next_bus.starttime.strftime("%R") : "本日のバスは終了" %></h2>
+  <h2>残り時間(分)　<%= @next_bus.nil? ? "なし" : @time_remaining %></h2>
   <tbody>
     <% @timedatas.each do |timedata| %>
       <tr>
-        <td><%= timedata.starttime.strftime("%R") %></td>
+        <td><%= timedata.starttime.strftime("%R")  %></td>
       </tr>
     <% end %>
   </tbody>

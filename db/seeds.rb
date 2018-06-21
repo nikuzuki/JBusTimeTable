@@ -32,5 +32,5 @@
 "22:05",
 "22:45",
 "23:15"].each do |d|
-  JaistBusTimeTableInWeekday.find_or_create_by(starttime: Time.parse("2000/01/01 #{d}"))
+  JaistBusTimeTableInWeekday.find_or_create_by(starttime: Time.zone.parse("2000/01/01 #{d}"))
 end
