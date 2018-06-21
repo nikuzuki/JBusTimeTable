@@ -1,2 +1,17 @@
-<p>Hello World!</p>
 <p>現在時刻 : <%= @time %></p>
+<h1>TimeTable(平日ダイヤ)</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @timedatas.each do |timedata| %>
+      <tr>
+        <td><%= timedata.starttime %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
