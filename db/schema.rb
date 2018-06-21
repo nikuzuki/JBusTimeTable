@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180621095617) do
+ActiveRecord::Schema.define(version: 20180621134949) do
 
   create_table "jaist_bus_time_table_in_weekdays", force: :cascade do |t|
-    t.time "starttime"
+    t.datetime "starttime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
