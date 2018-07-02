@@ -1,0 +1,2 @@
+class JaistBusTimeTableInHoliday < ApplicationRecord
+end
