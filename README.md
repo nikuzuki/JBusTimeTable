@@ -1,3 +1,4 @@
 # jBusTimeTable
 お山の上にある大学院から出るバスの時間を表示するアプリです.  
-現在時間を取得して、次のバスが出るまでの時間を出力する予定です.  
+
+Herokuで[出来たところ](https://j-bus-time-table.herokuapp.com/)までを公開しています.
