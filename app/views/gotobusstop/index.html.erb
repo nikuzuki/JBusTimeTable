@@ -1,14 +1,14 @@
 <p>現在時刻 : <%= @time %></p>
-<h1>TimeTable(平日ダイヤ)</h1>
+<h1>Weekday Bus Times</h1>
 <table>
   <thead>
     <tr>
-      <th>Next Departure Time</th>
+      <th>Time Table</th>
     </tr>
   </thead>
 
-  <h2><%= !@next_bus.nil? ? @next_bus.starttime.strftime("%R") : "本日のバスは終了" %></h2>
-  <h2>残り時間(分)　<%= @next_bus.nil? ? "なし" : @time_remaining %></h2>
+  <h2><%= !@next_bus.nil? ? "Next Departure Time is " + @next_bus.starttime.strftime("%R") : "Today is over." %></h2>
+  <h2>Remaining Time : <%= @next_bus.nil? ? "None" : @time_remaining.to_s + "min" %></h2>
   <tbody>
     <% @timedatas.each do |timedata| %>
       <tr>
